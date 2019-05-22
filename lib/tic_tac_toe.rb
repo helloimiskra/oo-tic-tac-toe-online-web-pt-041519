@@ -67,7 +67,7 @@ class TicTacToe
         # puts "invalid"
         # puts "Please input a position between 1-9"
         # user_input = gets.chomp
-      
+
     end
 
     def won?
