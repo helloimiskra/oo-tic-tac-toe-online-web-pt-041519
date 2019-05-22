@@ -58,13 +58,17 @@ class TicTacToe
 
       if valid_move?(index)
         token = current_player
-        move(index, token = "X")
+        move(index, token)
         display_board
       else
-        puts "invalid"
-        puts "Please input a position between 1-9"
-        user_input = gets.chomp
+        turn
       end
+      display_board
+      
+        # puts "invalid"
+        # puts "Please input a position between 1-9"
+        # user_input = gets.chomp
+      
     end
 
     def won?
