@@ -100,15 +100,9 @@ class TicTacToe
     end
 
     def play
-      until over? do
-        turn
-      end
-        if over? == won?
-          winner = token
-          puts "Congratulations, #{token}!"
-        else
-          puts "Cat's Game!"
-        end
+      until over? do turn
+        winner ? "Congratulations, #{winner}!" : "Cat's Game!"
       end
     end
-end
+  end
+        
